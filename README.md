@@ -144,5 +144,3 @@ For questions or feedback, please contact:
   GitHub: [ANSCoder](https://github.com/ANSCoder)  
 
 ---
-
-This `README.md` provides a comprehensive overview of your project and makes it easy for others to understand, set up, and contribute to the repository. Let me know if you'd like to add or modify anything! 😊
