@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A02A132D4DF73100712989 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 17A02A122D4DF73100712989 /* Swinject */; };
+		17A02A162D4DF76300712989 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A152D4DF76300712989 /* DIContainer.swift */; };
+		17A02A182D4DF79900712989 /* DependencyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A172D4DF79900712989 /* DependencyMap.swift */; };
+		17A02A1C2D4DF7D400712989 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A1B2D4DF7D400712989 /* NetworkService.swift */; };
+		17A02A1F2D4DF81200712989 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A1E2D4DF81200712989 /* ProductDetailViewModel.swift */; };
+		17A02A222D4DF82D00712989 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A212D4DF82D00712989 /* Product.swift */; };
+		17A02A252D4DF86300712989 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A242D4DF86200712989 /* Coordinator.swift */; };
+		17A02A272D4DF88200712989 /* ProductDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A262D4DF88200712989 /* ProductDetailCoordinator.swift */; };
+		17A02A292D4DF8C300712989 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A282D4DF8C300712989 /* ProductDetailView.swift */; };
+		17A02A2B2D4DF8F600712989 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A2A2D4DF8F600712989 /* CartManager.swift */; };
+		17A02A2D2D4DF90E00712989 /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A2C2D4DF90E00712989 /* LoggerProtocol.swift */; };
+		17A02A302D4DF92F00712989 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A2F2D4DF92F00712989 /* Logger.swift */; };
+		17A02A332D4DF95900712989 /* MockAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A322D4DF95900712989 /* MockAnalyticsService.swift */; };
+		17A02A352D4DF96300712989 /* MockCartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A342D4DF96300712989 /* MockCartManager.swift */; };
+		17A02A382D4DFA0C00712989 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A372D4DFA0C00712989 /* CartService.swift */; };
+		17A02A3B2D4DFAD900712989 /* AnalyticsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A3A2D4DFAD900712989 /* AnalyticsServiceProtocol.swift */; };
+		17A02A3D2D4DFAEA00712989 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A3C2D4DFAEA00712989 /* AnalyticsService.swift */; };
+		17A02A3F2D4DFC5B00712989 /* ProductDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A3E2D4DFC5B00712989 /* ProductDetailViewModelTests.swift */; };
+		17A02A412D4E1D3700712989 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A402D4E1D3700712989 /* MockNetworkService.swift */; };
+		17A02A432D4E1EF200712989 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02A422D4E1EF200712989 /* NetworkServiceProtocol.swift */; };
 		17CA22B32D4DF3C20013B833 /* RetailAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA22B22D4DF3C20013B833 /* RetailAppApp.swift */; };
 		17CA22B52D4DF3C20013B833 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA22B42D4DF3C20013B833 /* ContentView.swift */; };
 		17CA22B72D4DF3C50013B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CA22B62D4DF3C50013B833 /* Assets.xcassets */; };
 		17CA22BA2D4DF3C50013B833 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CA22B92D4DF3C50013B833 /* Preview Assets.xcassets */; };
-		17CA22C42D4DF3C60013B833 /* RetailAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA22C32D4DF3C60013B833 /* RetailAppTests.swift */; };
 		17CA22CE2D4DF3C60013B833 /* RetailAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA22CD2D4DF3C60013B833 /* RetailAppUITests.swift */; };
 		17CA22D02D4DF3C60013B833 /* RetailAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CA22CF2D4DF3C60013B833 /* RetailAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -34,13 +53,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17A02A152D4DF76300712989 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		17A02A172D4DF79900712989 /* DependencyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyMap.swift; sourceTree = "<group>"; };
+		17A02A1B2D4DF7D400712989 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		17A02A1E2D4DF81200712989 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		17A02A212D4DF82D00712989 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		17A02A242D4DF86200712989 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		17A02A262D4DF88200712989 /* ProductDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailCoordinator.swift; sourceTree = "<group>"; };
+		17A02A282D4DF8C300712989 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		17A02A2A2D4DF8F600712989 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		17A02A2C2D4DF90E00712989 /* LoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		17A02A2F2D4DF92F00712989 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		17A02A322D4DF95900712989 /* MockAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnalyticsService.swift; sourceTree = "<group>"; };
+		17A02A342D4DF96300712989 /* MockCartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCartManager.swift; sourceTree = "<group>"; };
+		17A02A372D4DFA0C00712989 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
+		17A02A3A2D4DFAD900712989 /* AnalyticsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsServiceProtocol.swift; sourceTree = "<group>"; };
+		17A02A3C2D4DFAEA00712989 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		17A02A3E2D4DFC5B00712989 /* ProductDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModelTests.swift; sourceTree = "<group>"; };
+		17A02A402D4E1D3700712989 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		17A02A422D4E1EF200712989 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
 		17CA22AF2D4DF3C20013B833 /* RetailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CA22B22D4DF3C20013B833 /* RetailAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppApp.swift; sourceTree = "<group>"; };
 		17CA22B42D4DF3C20013B833 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17CA22B62D4DF3C50013B833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CA22B92D4DF3C50013B833 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17CA22BF2D4DF3C60013B833 /* RetailAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetailAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17CA22C32D4DF3C60013B833 /* RetailAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppTests.swift; sourceTree = "<group>"; };
 		17CA22C92D4DF3C60013B833 /* RetailAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetailAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CA22CD2D4DF3C60013B833 /* RetailAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppUITests.swift; sourceTree = "<group>"; };
 		17CA22CF2D4DF3C60013B833 /* RetailAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -51,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A02A132D4DF73100712989 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +109,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A02A142D4DF75500712989 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A152D4DF76300712989 /* DIContainer.swift */,
+				17A02A172D4DF79900712989 /* DependencyMap.swift */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		17A02A192D4DF7B800712989 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A392D4DFACC00712989 /* Analytics */,
+				17A02A362D4DF9E000712989 /* Cart */,
+				17A02A2E2D4DF91C00712989 /* Logger */,
+				17A02A1A2D4DF7C300712989 /* Networking */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		17A02A1A2D4DF7C300712989 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A1B2D4DF7D400712989 /* NetworkService.swift */,
+				17A02A422D4E1EF200712989 /* NetworkServiceProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		17A02A1D2D4DF80500712989 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A1E2D4DF81200712989 /* ProductDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17A02A202D4DF82200712989 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A212D4DF82D00712989 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17A02A232D4DF85B00712989 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A242D4DF86200712989 /* Coordinator.swift */,
+				17A02A262D4DF88200712989 /* ProductDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		17A02A2E2D4DF91C00712989 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A2C2D4DF90E00712989 /* LoggerProtocol.swift */,
+				17A02A2F2D4DF92F00712989 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		17A02A312D4DF94F00712989 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A322D4DF95900712989 /* MockAnalyticsService.swift */,
+				17A02A402D4E1D3700712989 /* MockNetworkService.swift */,
+				17A02A342D4DF96300712989 /* MockCartManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		17A02A362D4DF9E000712989 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A2A2D4DF8F600712989 /* CartManager.swift */,
+				17A02A372D4DFA0C00712989 /* CartService.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		17A02A392D4DFACC00712989 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				17A02A3A2D4DFAD900712989 /* AnalyticsServiceProtocol.swift */,
+				17A02A3C2D4DFAEA00712989 /* AnalyticsService.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
 		17CA22A62D4DF3C20013B833 = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +223,13 @@
 		17CA22B12D4DF3C20013B833 /* RetailApp */ = {
 			isa = PBXGroup;
 			children = (
+				17A02A232D4DF85B00712989 /* Coordinator */,
+				17A02A202D4DF82200712989 /* Model */,
+				17A02A1D2D4DF80500712989 /* ViewModel */,
+				17A02A192D4DF7B800712989 /* Module */,
+				17A02A142D4DF75500712989 /* Dependency */,
 				17CA22B22D4DF3C20013B833 /* RetailAppApp.swift */,
+				17A02A282D4DF8C300712989 /* ProductDetailView.swift */,
 				17CA22B42D4DF3C20013B833 /* ContentView.swift */,
 				17CA22B62D4DF3C50013B833 /* Assets.xcassets */,
 				17CA22B82D4DF3C50013B833 /* Preview Content */,
@@ -113,7 +248,8 @@
 		17CA22C22D4DF3C60013B833 /* RetailAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				17CA22C32D4DF3C60013B833 /* RetailAppTests.swift */,
+				17A02A312D4DF94F00712989 /* Mocks */,
+				17A02A3E2D4DFC5B00712989 /* ProductDetailViewModelTests.swift */,
 			);
 			path = RetailAppTests;
 			sourceTree = "<group>";
@@ -143,6 +279,9 @@
 			dependencies = (
 			);
 			name = RetailApp;
+			packageProductDependencies = (
+				17A02A122D4DF73100712989 /* Swinject */,
+			);
 			productName = RetailApp;
 			productReference = 17CA22AF2D4DF3C20013B833 /* RetailApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +354,9 @@
 				Base,
 			);
 			mainGroup = 17CA22A62D4DF3C20013B833;
+			packageReferences = (
+				17A02A112D4DF73100712989 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 17CA22B02D4DF3C20013B833 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +399,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A02A252D4DF86300712989 /* Coordinator.swift in Sources */,
+				17A02A292D4DF8C300712989 /* ProductDetailView.swift in Sources */,
+				17A02A1C2D4DF7D400712989 /* NetworkService.swift in Sources */,
+				17A02A2B2D4DF8F600712989 /* CartManager.swift in Sources */,
+				17A02A432D4E1EF200712989 /* NetworkServiceProtocol.swift in Sources */,
+				17A02A3B2D4DFAD900712989 /* AnalyticsServiceProtocol.swift in Sources */,
 				17CA22B52D4DF3C20013B833 /* ContentView.swift in Sources */,
+				17A02A162D4DF76300712989 /* DIContainer.swift in Sources */,
 				17CA22B32D4DF3C20013B833 /* RetailAppApp.swift in Sources */,
+				17A02A382D4DFA0C00712989 /* CartService.swift in Sources */,
+				17A02A182D4DF79900712989 /* DependencyMap.swift in Sources */,
+				17A02A3D2D4DFAEA00712989 /* AnalyticsService.swift in Sources */,
+				17A02A272D4DF88200712989 /* ProductDetailCoordinator.swift in Sources */,
+				17A02A302D4DF92F00712989 /* Logger.swift in Sources */,
+				17A02A2D2D4DF90E00712989 /* LoggerProtocol.swift in Sources */,
+				17A02A1F2D4DF81200712989 /* ProductDetailViewModel.swift in Sources */,
+				17A02A222D4DF82D00712989 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17CA22C42D4DF3C60013B833 /* RetailAppTests.swift in Sources */,
+				17A02A412D4E1D3700712989 /* MockNetworkService.swift in Sources */,
+				17A02A352D4DF96300712989 /* MockCartManager.swift in Sources */,
+				17A02A332D4DF95900712989 /* MockAnalyticsService.swift in Sources */,
+				17A02A3F2D4DFC5B00712989 /* ProductDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +742,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17A02A112D4DF73100712989 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		17A02A122D4DF73100712989 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17A02A112D4DF73100712989 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 17CA22A72D4DF3C20013B833 /* Project object */;
 }

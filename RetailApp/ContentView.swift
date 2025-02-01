@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @State private var products: [Product] = []
 
-#Preview {
-    ContentView()
+    var body: some View {
+        NavigationView {
+            List(products, id: \.id) { product in
+                if let coordinator = DIContainer.shared.container.resolve(
+                    ProductDetailCoordinator.self,
+                    argument: product
+                ) {
+                    NavigationLink(
+                        destination: coordinator.start()
+                    ) {
+                        Text(product.name)
+                    }
+                } else {
+                    // Fallback UI in case the dependency resolution fails
+                    Text("Unable to load product details")
+                }
+            }
+            .navigationTitle("Products")
+        }
+        .task {
+            let networkService = DIContainer.shared.container.resolve(NetworkServiceProtocol.self)
+            products = await networkService?.fetchProducts() ?? []
+        }
+    }
 }
